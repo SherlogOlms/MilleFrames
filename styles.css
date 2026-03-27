@@ -3,7 +3,6 @@ body
     background:#f5f2ed;
     background-size:cover;
     font-family: "DM Sans";
-    color:#1c1c1c;
 }
 
 @font-face 
@@ -890,6 +889,10 @@ footer p
         height: auto;
         box-sizing: border-box;
     }
+    body .email 
+    {
+        color:white;
+    }
     h3 
     {
         display: flex;
@@ -1365,6 +1368,11 @@ footer p
     .email a
     {
         font-size:10px;
+        color:white;
+    }
+    .mail 
+    {
+        color:white;
     }
     .whatsapp
     {
@@ -1391,6 +1399,9 @@ footer p
     {
         font-size: 10px;
         color:white;
-    
+    }
+    #contact a 
+    {
+        color:white;
     }
 }
