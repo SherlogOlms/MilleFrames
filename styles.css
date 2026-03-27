@@ -886,6 +886,7 @@ footer p
         margin-top:0;
         min-width: 0;
         height: auto;
+        box-sizing: border-box;
     }
     h3 
     {
@@ -901,7 +902,7 @@ footer p
     }
     a
     {
-        color:inherit;
+        color:inherit !important;
     }
     .icon-rond
     {
