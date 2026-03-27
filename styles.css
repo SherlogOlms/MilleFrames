@@ -30,6 +30,10 @@ p
 {
     font-size:20px;
 }
+a
+{
+    color:inherit;
+}
 header
 {
     background-color: #c2a47b38;
@@ -894,6 +898,10 @@ footer p
     {
         text-align: center;
         font-size:20px;
+    }
+    a
+    {
+        color:inherit;
     }
     .icon-rond
     {
