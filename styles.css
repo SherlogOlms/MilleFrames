@@ -1356,6 +1356,10 @@ footer p
         width:100%;
         padding:0;
     }
+    .whatsapp p 
+    {
+        color:white;
+    }
     #contact
     {
         width:100%;
