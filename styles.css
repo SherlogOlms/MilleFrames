@@ -889,7 +889,7 @@ footer p
     .icon-rond
     {
         margin:0;
-        width:100%;
+        width:60%;
         height:auto;
         padding:20px 100px;
     }
@@ -1361,5 +1361,6 @@ footer p
     #contact p
     {
         font-size: 10px;
+        color:white;
     }
 }
