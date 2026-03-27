@@ -861,7 +861,10 @@ footer p
 
 @media screen and (max-width:768px)
 {
-
+    html, body 
+    {
+        overflow-x: hidden;
+    }
     header
     {
         display: flex;
@@ -979,7 +982,7 @@ footer p
     .album
     {
         flex: 0 0 auto;
-        width: 140px;
+        width: 160px;
         height:auto;
         scroll-snap-align: start;
         box-shadow: none;
