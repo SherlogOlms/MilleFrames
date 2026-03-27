@@ -802,6 +802,10 @@ footer p
     display: flex;
     flex-direction: row;
 }
+.email a
+{
+    color:white;
+}
 .insta
 {
     display: flex;
