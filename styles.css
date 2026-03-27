@@ -770,6 +770,10 @@ footer p
     flex-direction: row;
     align-items: center;
 }
+.email a
+{
+    color:white;
+}
 .lien
 {
     display: flex;
@@ -778,7 +782,8 @@ footer p
 .logo-whatsapp
 {
     filter:invert(1);
-    width:60px;
+    width:40px;
+    margin-right:10px;
 }
 .logo-email
 {
@@ -1314,7 +1319,7 @@ footer p
         padding-top:20px;
         margin-top:20px;
         margin-left:0;
-        margin-bottom:20px;
+        margin-bottom:0;
     }
     .logo-email
     {
@@ -1341,6 +1346,10 @@ footer p
         width:100%;
         height:auto;
     }
+    .email a
+    {
+        font-size:10px;
+    }
     .whatsapp
     {
         height:auto;
@@ -1362,5 +1371,6 @@ footer p
     {
         font-size: 10px;
         color:white;
+    
     }
 }
