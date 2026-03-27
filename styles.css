@@ -1386,6 +1386,7 @@ footer p
     .whatsapp p 
     {
         color:white;
+        text-decoration: none;
     }
     #contact
     {
@@ -1402,9 +1403,11 @@ footer p
     {
         font-size: 10px;
         color:white;
+        text-decoration: none;
     }
     #contact a 
     {
         color:white;
+        text-decoration: none;
     }
 }
