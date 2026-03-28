@@ -982,7 +982,7 @@ footer p
     .album
     {
         flex: 0 0 auto;
-        width: 180px;
+        width: 170px;
         height:auto;
         scroll-snap-align: start;
         box-shadow: none;
