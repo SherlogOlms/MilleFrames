@@ -870,6 +870,7 @@ footer p
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         gap:20px;
         padding:0;
         width:100%;
@@ -877,6 +878,9 @@ footer p
     header .main
     {
         margin:0;
+        display: flex;
+        justify-content:center;
+        align-items: center;
     }
     header .nav-list
     {
@@ -917,7 +921,7 @@ footer p
         margin:0;
         width:60%;
         height:auto;
-        padding:20px 100px;
+        padding-top:20px;
     }
     .main
     {
