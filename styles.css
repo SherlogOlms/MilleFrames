@@ -965,7 +965,7 @@ footer p
         flex-wrap: nowrap;
         overflow-x: auto;
         overflow-y: hidden;
-        gap:16px;
+        gap:20px;
         padding:5px;
         scroll-snap-type: x mandatory;
         -webkit-overflow-scrollig:touch;
@@ -1006,7 +1006,6 @@ footer p
         width:90%;
         height:auto;
     }
-
     .gallery-section h2 {
         font-size: 2rem;
         margin-bottom: 30px;
@@ -1055,10 +1054,16 @@ footer p
     {
         display: flex;
         flex-direction: column;
+        align-items: center;
         width:100%;
         box-sizing:border-box;
         margin:0;
         padding:60px;
+    }
+    .galerie-img
+    {
+        width:80%;
+        height:auto;
     }
     #lightboxImg
     {
