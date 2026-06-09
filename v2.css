@@ -1,0 +1,45 @@
+/* =====================================================================
+   Mille Frames — Couche 2.0 (améliorations, non destructif)
+   Chargée APRÈS styles.css. N'écrase pas le design existant.
+   ===================================================================== */
+
+html { scroll-behavior: smooth; }
+
+/* Apparition en douceur au défilement */
+[data-rev]{ opacity:0; transform:translateY(26px); transition:opacity .7s ease, transform .7s ease; }
+[data-rev].vu{ opacity:1; transform:none; }
+
+/* Zoom doux au survol (galerie + albums) */
+.galerie-img{ transition:transform .5s ease, filter .3s ease; cursor:zoom-in; }
+.galerie-img:hover{ transform:scale(1.03); filter:brightness(1.06); }
+.album .fond{ transition:transform .6s ease; }
+.album:hover .fond{ transform:scale(1.06); }
+
+/* Chargement progressif des photos (lazy) */
+img[loading="lazy"]{ opacity:0; transition:opacity .6s ease; }
+img[loading="lazy"].chargee{ opacity:1; }
+
+/* Lightbox : flèches + compteur */
+.lb-nav{ position:fixed; top:50%; transform:translateY(-50%); z-index:10001;
+  background:rgba(0,0,0,.45); color:#fff; border:none; width:54px; height:54px;
+  border-radius:50%; font-size:32px; line-height:1; cursor:pointer; display:none;
+  align-items:center; justify-content:center; backdrop-filter:blur(2px); }
+.lb-nav:hover{ background:rgba(0,0,0,.7); }
+.lb-nav.actif{ display:flex; }
+.lb-prev{ left:18px; } .lb-next{ right:18px; }
+.lb-compteur{ position:fixed; bottom:24px; left:50%; transform:translateX(-50%); z-index:10001;
+  color:#fff; background:rgba(0,0,0,.45); padding:6px 14px; border-radius:999px; font-size:14px; display:none; }
+.lb-compteur.actif{ display:block; }
+
+/* Bouton retour en haut */
+#scrollTop{ position:fixed; right:18px; bottom:18px; z-index:900; width:46px; height:46px;
+  border-radius:50%; border:none; background:#141414; color:#fff; font-size:20px; cursor:pointer;
+  opacity:0; pointer-events:none; transition:opacity .3s ease; box-shadow:0 6px 18px rgba(0,0,0,.3); }
+#scrollTop.visible{ opacity:.92; pointer-events:auto; }
+#scrollTop:hover{ background:#000; }
+
+@media (prefers-reduced-motion:reduce){
+  html{ scroll-behavior:auto; }
+  [data-rev]{ opacity:1; transform:none; }
+  .galerie-img, .album .fond, img[loading="lazy"]{ transition:none; opacity:1; }
+}
